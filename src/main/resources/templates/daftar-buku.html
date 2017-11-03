@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Daftar Mahasiswa</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+<h1>Daftar Mahasiswa</h1>
+
+<table border="1">
+    <thead>
+    <tr>
+        <td>Id</td>
+        <td>Judul Buku</td>
+        <td>Penulis</td>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="buku : ${daftarBuku}">
+        <td th:text="${buku.id}"></td>
+        <td th:text="${buku.judul_buku}"></td>
+        <td th:text="${buku.penulis}"></td>
+
+    </tr>
+
+    </tbody>
+    <tfoot>
+    <tr>
+        <td><a href="/tambah-data">Tambah Data</a></td>
+    </tr>
+    </tfoot>
+
+</table>
+</body>
+</html>
