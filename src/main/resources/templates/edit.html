@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Form Edit</title>
+    </head>
+    <body>
+        <h1>Ubah Data</h1>
+        
+        <form th:action="@{/edit}" th:object="${buku}" method="post">
+            <table>
+                <tr>
+                    <td>ID</td>
+                    <td><input type="text" th:field="*{id}" disabled="true" /></td>
+                    <td><input type="hidden" th:field="*{id}" /></td>
+                </tr>
+                
+                <tr>
+                    <td>JUDUL BUKU</td>
+                    <td><input type="text" th:field="*{judul_buku}" /></td>
+                </tr>
+                
+                <tr>
+                    <td>PENULIS</td>
+                    <td><input type="text" th:field="*{penulis}" /></td>
+                </tr>
+            </table>
+            <button type="submit">Simpan</button>
+        </form>
+    </body>
+</html>

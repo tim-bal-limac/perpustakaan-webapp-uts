@@ -1,0 +1,4 @@
+limac\timbal\perpustakaanwebapputs\PerpustakaanWebappUtsApplication.class
+limac\timbal\perpustakaanwebapputs\controller\AppController.class
+limac\timbal\perpustakaanwebapputs\entitiy\Buku.class
+limac\timbal\perpustakaanwebapputs\repo\BukuRepo.class
